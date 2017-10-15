@@ -1,0 +1,13 @@
+.box {
+  display: flex;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  /*border: 2px solid black;*/
+  z-index: 10;
+  width: 300px;
+  height: 300px;
+  font-size: 1.5rem;
+  margin: 1px;
+}

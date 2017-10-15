@@ -36,3 +36,29 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+#communities {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: #4a6f94;
+
+
+  img {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .1;
+    filter: grayscale(100%);
+  }
+
+  .content__text * {
+    z-index: 5;
+    color: white;
+  }
+
+}
