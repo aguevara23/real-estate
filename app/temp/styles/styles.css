@@ -424,3 +424,227 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
+/*The global css file contains the few properties that are styled the same for every instane of that element in the project.*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f0eeee;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: white;
+}
+
+#about {
+  /*background: rgba(255, 0, 0, 0.5);*/
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.primary-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+.primary-nav ul li {
+    list-style: none;
+    padding: 10px;
+  }
+
+.primary-nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1.2px;
+  }
+
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*background: rgba(255, 0, 0, 0.5);*/
+  width: 100%;
+  padding-top: 20px;
+}
+
+.site-header__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+.site-header__brand {
+    background-color: #004990;
+    border: 1px solid white;
+    width: 100px;
+    height: 45px;
+    margin-left: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+
+.site-header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 25px;
+  }
+
+.site-header__logo * {
+      color: #202d50;
+      border-left: 2px solid white;
+      padding: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+    }
+
+.site-header__contact-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 100px;
+  }
+
+.site-header__contact-number * {
+      color: #aa2320;
+      font-size: .9rem;
+    }
+
+.site-header__contact-number a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+.site-header__contact-number i {
+      -webkit-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+      margin-right: 5px;
+    }
+
+.wrapper {
+  /*background: rgba(255, 0, 0, 0.5);*/
+  padding-left: 70px;
+}
+
+.large-hero {
+  position: relative;
+  z-index: -2;
+}
+
+.large-hero__banner {
+    background: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    height: 200px;
+  }
+
+.content__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+.content__title {
+    font-size: 2.2rem;
+    border-left: 3px solid red;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: 'Open Sans';
+  }
+
+.content__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /*border: 2px solid green;*/
+    min-width: 50%;
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+  }
+
+.content__social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 20%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+.content__info-text {
+    font-weight: light;
+    font-size: 1.3rem;
+    color: #666;
+    line-height: 1.3;
+    font-family: "Raleway";
+    font-weight: 200;
+
+  }

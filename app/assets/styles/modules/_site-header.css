@@ -1,0 +1,67 @@
+.site-header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  /*background: rgba(255, 0, 0, 0.5);*/
+  width: 100%;
+  padding-top: 20px;
+
+
+  &__logos {
+    display: flex;
+    align-items: center;
+  }
+
+  &__brand {
+    background-color: #004990;
+    border: 1px solid white;
+    width: 100px;
+    height: 45px;
+    margin-left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+
+    * {
+      color: #202d50;
+      border-left: 2px solid white;
+      padding: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+    }
+  }
+
+  &__contact-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+
+    * {
+      color: #aa2320;
+      font-size: .9rem;
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    i {
+      transform: scale(-1, 1);
+      margin-right: 5px;
+    }
+  }
+}

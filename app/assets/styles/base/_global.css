@@ -1,0 +1,29 @@
+/*The global css file contains the few properties that are styled the same for every instane of that element in the project.*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f0eeee;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+}
+
+#about {
+  /*background: rgba(255, 0, 0, 0.5);*/
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
