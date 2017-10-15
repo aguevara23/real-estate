@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    text-transform: uppercase;
+    /*font-weight: bold;*/
+    font-size: 1.2rem;
+  }
+
+  &--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-media {
+
+    margin-left: 20px;
+
+    i {
+      font-size: 60px;
+      padding: 10px;
+    }
+
+  }
+}

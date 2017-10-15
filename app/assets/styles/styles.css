@@ -9,4 +9,6 @@
 @import "modules/_content";
 @import "modules/_card";
 @import "modules/_row";
-@import "modules/_box.css";
+@import "modules/_box";
+@import "modules/_testimonial";
+@import "modules/_footer";
