@@ -8,8 +8,6 @@
   <meta name="description" content="" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css" />
   <!-- endbuild-->
@@ -47,11 +45,16 @@
 
   <section class="large-hero">
     <div class="large-hero__banner">
-      <div class="large-hero__title">Welcome</div>
+      <div class="large-hero__title">
+        <div>
+          Getting You
+          <span>Home</span>
+        </div>
+      </div>
     </div>
 
     <picture>
-      <img src="./assets/images/main-wide.jpeg" alt="Beautiful house in San Jose" class="background--full-width">
+      <img src="./assets/images/main-wide.jpeg" alt="Beautiful house in San Jose">
     </picture>
   </section>
 
@@ -189,7 +192,7 @@
     </div>
 
     <picture>
-      <img src="./assets/images/main-wide.jpeg" alt="Beautiful house in San Jose" class="background--full-width">
+      <img src="./assets/images/townhouse1.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width">
     </picture>
   </section>
 
@@ -206,7 +209,7 @@
     </div>
 
     <picture>
-      <img src="./assets/images/main-wide.jpeg" alt="Beautiful house in San Jose" class="background--full-width">
+      <img src="./assets/images/house1.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width">
     </picture>
   </section>
 
@@ -223,7 +226,7 @@
     </div>
 
     <picture>
-      <img src="./assets/images/main-wide.jpeg" alt="Beautiful house in San Jose" class="background--full-width">
+      <img src="./assets/images/house2.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width">
     </picture>
   </section>
 
@@ -251,17 +254,54 @@
           </div>
         </div>
       </div>
-      <div class="content__container">
-        <div class="content__content-left">
+    </div>
+    <div id="map"></div>
+    <script>
+       function initMap() {
+         var uluru = {lat: 37.394787, lng: -121.929427};
+         var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 15,
+           center: uluru
+         });
+         var marker = new google.maps.Marker({
+           position: uluru,
+           map: map
+         });
+       }
+    </script>
 
-        </div>
-        <div class="content__content-right">
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcWdJYOZwqQjla81hn4JkIU6nYQmnR_Q0&callback=initMap">
+    </script>
+
+    <div class="wrapper">
+      <div class="content__container">
+        <div class="contact__form__left contact__form__left--padding-left">
+          <!-- <div class="site-header__brand">My Brand</div> -->
+          <div class="contact__name">Marite Dufour</div>
+          <div class="contact__title">Coldwell Banker Agent</div>
+
+          <div class="contact__text">
+            <div class="contact__address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <div>
+                <div>2860 Zanker Road</div>
+                <div>Suite 204</div>
+                <div>San Jose, CA 95134</div>
+              </div>
+            </div>
+            <div><i class="fa fa-phone" aria-hidden="true"></i>(831) 419-5274</div>
+            <div><i class="fa fa-envelope" aria-hidden="true"></i>marite@maritedufour.com</div>
+          </div>
+
+          </div>
+        <div class="contact__form__right">
           <input type="text" placeholder="Your Name">
           <input type="text" placeholder="Your Email">
-          <input type="text" placeholder="Your Message">
-          <div class="form__buttons">
-            <button>Send</button>
-            <button>Cancel</button>
+          <textarea placeholder="Your Message"></textarea>
+          <div class="contact__form__buttons">
+            <button class="contact__form__send">Send</button>
+            <button class="contact__form__cancel">Cancel</button>
           </div>
         </div>
       </div>

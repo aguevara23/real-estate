@@ -475,7 +475,8 @@ a {
 }
 
 #communities img {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -496,15 +497,17 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
+  background-color: black;
 }
 
 #buying img, #selling img {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    opacity: 1;
+    opacity: .5;
   }
 
 #buying .content__text *, #selling .content__text * {
@@ -526,8 +529,8 @@ a {
 
 #associations {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #dbd8d8;
 
 }
@@ -539,10 +542,17 @@ a {
 
 #footer {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #333333;
   color: white;
+}
+
+#map {
+  width: 100%;
+  height: 55vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .primary-nav {
@@ -679,12 +689,61 @@ a {
 }
 
 .large-hero__banner {
-    background: rgba(255, 0, 0, 0.5);
+    background: rgba(230, 100, 0, 0.7);
     position: absolute;
     top: 50%;
-    width: 500px;
-    height: 200px;
+    width: 700px;
+    height: 250px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
+
+.large-hero__title {
+    text-align: right;
+    font-size: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    padding-right: 30px;
+
+  }
+
+.large-hero div {
+    text-align: left;
+  }
+
+.large-hero span {
+    display: block;
+    width: 100%;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: -20px;
+  }
+
+.content {
+
+  /*&__background--full-width {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+  }*/
+}
 
 .content__container {
     display: -webkit-box;
@@ -990,3 +1049,113 @@ a {
       font-size: 60px;
       padding: 10px;
     }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+
+
+}
+
+.contact__form__left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+
+.contact__form__left--padding-left {
+        padding-left: 80px;
+      }
+
+.contact__form__right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+
+.contact__form__right input {
+        width: 85%;
+        height: 50px;
+        margin-bottom: 30px;
+      }
+
+.contact__form__right textarea {
+        width: 85%;
+        height: 175px;
+        margin-bottom: 30px;
+      }
+
+.contact__form__buttons {
+      width: 100%;
+    }
+
+.contact__form__buttons button {
+        color: white;
+        padding: 10px 55px;
+        border: none;
+
+      }
+
+.contact__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+  }
+
+.contact__title, .contact__text {
+    font-size: 1.3rem;
+    font-weight: lighter;
+  }
+
+.contact__text {
+    margin-top: 50px;
+  }
+
+.contact__text * {
+      margin-bottom: 10px;
+    }
+
+.contact__text i {
+      margin-right: 20px;
+      width: 10px;
+      color: #ea6060;
+    }
+
+.contact__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+.contact__form__send {
+  background-color: #ea6060;
+}

@@ -74,6 +74,37 @@
 "use strict";
 
 
+// import Map from './modules/Map';
+
+// var map = new Map();
+
+
+function init_map() {
+    var selectorMapElement = document.getElementById('gmap_canvas');
+    var googleMapTitle = "Zurb";
+    var googleMapAddress = "100 W Rincon Ave, Campbell, CA 95008";
+    var googleMapLat = 37.2847678;
+    var googleMapLong = -121.9536827;
+    var myOptions = {
+        zoom: 13,
+        center: new google.maps.LatLng(googleMapLat, googleMapLong),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    infowindow = new google.maps.InfoWindow({
+        content: "\n          <strong>" + googleMapTitle + "</strong>\n          <br>" + googleMapAddress + "<br>\n        "
+    });
+    map = new google.maps.Map(selectorMapElement, myOptions);
+    marker = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(googleMapLat, googleMapLong)
+    });
+    infowindow.open(map, marker);
+    // google.maps.event.addListener(marker, 'click', function() {
+    //     infowindow.open(map, marker);
+    // });
+}
+google.maps.event.addDomListener(window, 'load', init_map);
+
 /***/ })
 
 /******/ });

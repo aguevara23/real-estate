@@ -77,4 +77,11 @@
     font-weight: 200;
 
   }
+
+  /*&__background--full-width {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+  }*/
 }
