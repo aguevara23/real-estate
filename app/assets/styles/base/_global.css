@@ -27,3 +27,12 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+
+#listings {
+  background-color: #dbd8d8;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

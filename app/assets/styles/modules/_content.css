@@ -32,6 +32,17 @@
       width: 80%;
       margin-top: -70px;
     }
+
+    input {
+      width: 233px;
+      height: 50px;
+      align-self: flex-end;
+
+      padding-left: 20px;
+      text-transform: uppercase;
+      border: 2px solid gray;
+      border-radius: 2px;
+    }
   }
 
   &__social-media {
