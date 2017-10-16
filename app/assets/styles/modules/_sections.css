@@ -1,9 +1,14 @@
 #about {
-  /*background: rgba(255, 0, 0, 0.5);*/
   min-height: 100vh;
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @mixin atMedium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
 }
 
 
@@ -11,17 +16,28 @@
   background-color: #dbd8d8;
   width: 100%;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @mixin atMedium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
 }
 
 #communities {
   width: 100%;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
   position: relative;
   background-color: #4a6f94;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @mixin atMedium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
 
   img {
@@ -45,10 +61,15 @@
 #buying, #selling {
   width: 100%;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
   position: relative;
   background-color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @mixin atMedium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
   img {
     width: 100%;
@@ -74,8 +95,8 @@
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @mixin atMedium {
     padding-top: 100px;

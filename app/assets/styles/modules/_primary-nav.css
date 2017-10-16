@@ -1,9 +1,32 @@
 .primary-nav {
+  background: rgba(0,0,0,0.8);
   display: flex;
   flex: 1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform .2s .3s ease-in-out;
+
+  @mixin atMedium {
+    background: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+  }
 
   ul {
     display: flex;
+    flex-direction: column;
+
+
+    @mixin atMedium {
+      flex-direction: row;
+    }
   }
 
   ul li {
@@ -15,9 +38,14 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: 1.2px;
     display: block;
+    font-size: 1.3rem;
+
+    @mixin atMedium {
+      font-size: .8rem;
+      letter-spacing: 1.2px;
+
+    }
 
     &.is-current-link {
       color: orange;
@@ -35,4 +63,14 @@
   }
 
 
+}
+
+.is-not-visible {
+  opacity: 1;
+  transform: translateX(-100%);
+  /*z-index: -20;*/
+
+  @mixin atMedium {
+    transform: translateX(0);
+  }
 }

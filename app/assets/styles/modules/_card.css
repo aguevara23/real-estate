@@ -1,6 +1,12 @@
 .card {
   width: 370px;
   background: #eaeaea;
+  margin-bottom: 20px;
+
+  @mixin atMedium {
+    width: 370px;
+    margin-bottom: 0;
+  }
 
 
   &__image {

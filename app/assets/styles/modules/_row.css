@@ -6,6 +6,7 @@
   flex-wrap: wrap;
 
   &--margin-top {
+    margin-top: 30px;
 
     @mixin atMedium {
       margin-top: 55px;
