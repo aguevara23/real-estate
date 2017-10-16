@@ -74,6 +74,11 @@
         color: white;
         padding: 10px 55px;
         border: none;
+        margin-bottom: 5px;
+
+        @mixin atMedium {
+          margin-bottom: 0;
+        }
 
       }
     }
@@ -110,10 +115,17 @@
     display: flex;
   }
 
+  &__number {
+    color: #333;
+    text-decoration: none;
+  }
 
 }
 
 .contact__form__send {
   background-color: #ea6060;
+}
 
+.contact__form__cancel {
+  background-color: #666;
 }

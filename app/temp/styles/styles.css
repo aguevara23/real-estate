@@ -623,8 +623,6 @@ a {
   }
 
 .site-header__brand {
-    background-color: #004990;
-    border: 1px solid white;
     width: 100px;
     height: 45px;
     margin-left: 15px;
@@ -1418,7 +1416,6 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 
-
 }
 
 @media (min-width: 800px) {
@@ -1428,7 +1425,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row
-
 
 }
   }
@@ -1541,8 +1537,17 @@ a {
         color: white;
         padding: 10px 55px;
         border: none;
+        margin-bottom: 5px;
 
       }
+
+@media (min-width: 800px) {
+
+.contact__form__buttons button {
+          margin-bottom: 0
+
+      }
+  }
 
 .contact__name {
     font-size: 1.5rem;
@@ -1576,9 +1581,17 @@ a {
     display: flex;
   }
 
+.contact__number {
+    color: #333;
+    text-decoration: none;
+  }
+
 .contact__form__send {
   background-color: #ea6060;
+}
 
+.contact__form__cancel {
+  background-color: #666;
 }
 
 #about {
