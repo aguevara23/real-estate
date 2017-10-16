@@ -73,12 +73,18 @@
 #contact {
   width: 100%;
   min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @mixin atMedium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
 }
 
-#associations {
+#affliations {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -86,8 +92,18 @@
 
 
   img {
-    height: 80px;
+    height: 25px;
+    margin: 5px;
+
+    @mixin atMedium {
+    height: 60px;
     margin: 20px;
+    }
+
+    @mixin atLarge {
+      height: 80px;
+      margin: 20px;
+    }
   }
 
 }
@@ -95,10 +111,15 @@
 
 #footer {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #333333;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  @mixin atMedium {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 #map {

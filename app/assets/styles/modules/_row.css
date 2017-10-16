@@ -1,11 +1,18 @@
 .row {
   width: 100%;
-  margin-top: 55px;
+  margin-top: 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
+  &--margin-top {
+
+    @mixin atMedium {
+      margin-top: 55px;
+    }
+  }
+
   &--centered {
-    justify-content: center; 
+    justify-content: center;
   }
 }

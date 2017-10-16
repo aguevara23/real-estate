@@ -2,26 +2,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+
+  @mixin atMedium {
+    padding-top: 0;
+    flex-direction: row;
+  }
 
   &__text {
     text-transform: uppercase;
-    /*font-weight: bold;*/
-    font-size: 1.2rem;
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+
+    @mixin atMedium {
+      text-align: left;
+      font-size: 1.2rem;
+      display: block;
+    }
   }
 
   &--right {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    @mixin atMedium {
+      flex-direction: row;
+    }
+  }
+
+  &--left {
+    order: -1;
+    font-size: .8;
+    display: block;
+
+    @mixin atMedium {
+      order: -1;
+    }
   }
 
   &__social-media {
-
     margin-left: 20px;
+    display: flex;
+    margin: 15px 0;
+
+    @mixin atMedium {
+      margin: 0;
+    }
 
     i {
-      font-size: 60px;
-      padding: 10px;
+      font-size: 40px;
+      padding: 5px;
+
+      @mixin atMedium {
+        font-size: 60px;
+        padding: 10px;
+
+      }
     }
 
   }
