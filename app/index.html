@@ -21,17 +21,18 @@
       <div class="site-header__logos">
         <div class="site-header__brand">My Brand</div>
         <div class="site-header__logo">
-          <div>Marite Dufour</div>
+          <a href="#home" id="home-link">Marite Dufour</a>
         </div>
       </div>
       <div class="site-header__menu-content">
         <nav class="primary-nav">
           <ul>
-            <li><a href="#">About Marite</a></li>
-            <li><a href="#">Listings & Sales</a></li>
-            <li><a href="#">Buying</a></li>
-            <li><a href="#">Selling</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about" id="about-link">About Marite</a></li>
+            <li><a href="#listings" id="listings-link">Listings & Sales</a></li>
+            <li><a href="#communities" id="communities-link">Communities</a></li>
+            <li><a href="#buying" id="buying-link">Buying</a></li>
+            <li><a href="#selling" id="selling-link">Selling</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
             <div class="site-header__contact-number">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <a href="#">831-419-5274</a>
@@ -43,8 +44,8 @@
     <!-- <div> -->
   </header>
 
-  <section class="large-hero">
-    <div class="large-hero__banner">
+  <section id="home" class="large-hero page-section" data-matching-link="#home-link">
+    <div class="large-hero__banner animated__slide-from-left">
       <div class="large-hero__title">
         <div>
           Getting You
@@ -59,7 +60,7 @@
   </section>
 
   <!-- About page -->
-  <section id="about">
+  <section id="about" data-matching-link="#about-link" class="page-section">
     <div class="wrapper">
       <div class="content__container">
         <div class="content__text">
@@ -85,13 +86,13 @@
         </div>
 
       <div class="content__content-right">
-        <img src="./assets/images/portrait.jpeg" class="content__portrait">
+        <img src="./assets/images/portrait.jpeg" class="content__portrait lazyload">
         <!-- Social media icons -->
         <div class="content__social-media">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          <i class="fa fa-envelope-square" aria-hidden="true"></i>
+          <i class="fa fa-facebook-square lazyload" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square lazyload" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square lazyload" aria-hidden="true"></i>
+          <i class="fa fa-envelope-square lazyload" aria-hidden="true"></i>
         </div>
       </div>
       </div>
@@ -99,7 +100,7 @@
     </div>
   </section>
 
-  <section id="listings">
+  <section id="listings" class="page-section" data-matching-link="#listings-link">
     <div class="wrapper">
       <div class="content__container">
         <div class="content__text">
@@ -116,7 +117,7 @@
       <div class="row">
         <div class="card">
           <div class="card__image">
-            <img src="./assets/images/main.jpeg">
+            <img class="lazyload" src="./assets/images/main.jpeg">
             <div class="card__image__info">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
               <h4>Lorem Ipsum</h4>
@@ -132,7 +133,7 @@
         </div>
         <div class="card">
           <div class="card__image">
-            <img src="./assets/images/main.jpeg">
+            <img class="lazyload" src="./assets/images/main.jpeg">
             <div class="card__image__info">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
               <h4>Lorem Ipsum</h4>
@@ -148,7 +149,7 @@
         </div>
         <div class="card">
           <div class="card__image">
-            <img src="./assets/images/main.jpeg">
+            <img class="lazyload" src="./assets/images/main.jpeg">
             <div class="card__image__info">
               <i class="fa fa-plus-circle" aria-hidden="true"></i>
               <h4>Lorem Ipsum</h4>
@@ -168,7 +169,7 @@
 
   </section>
 
-  <section id="communities">
+  <section id="communities" data-matching-link="#communities-link" class="page-section">
     <div class="wrapper">
       <div class="content__container">
         <div class="content__text">
@@ -192,11 +193,11 @@
     </div>
 
     <picture>
-      <img src="./assets/images/townhouse1.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width">
+      <img src="./assets/images/townhouse1.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width lazyload">
     </picture>
   </section>
 
-  <section id="buying">
+  <section id="buying" data-matching-link="#buying-link" class="page-section">
     <div class="wrapper">
       <div class="content__container">
         <div class="content__text">
@@ -209,11 +210,11 @@
     </div>
 
     <picture>
-      <img src="./assets/images/house1.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width">
+      <img src="./assets/images/house1.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width lazyload">
     </picture>
   </section>
 
-  <section id="selling">
+  <section id="selling" data-matching-link="#selling-link" class="page-section">
     <div class="wrapper">
       <div class="content__container">
         <div class="content__text">
@@ -226,7 +227,7 @@
     </div>
 
     <picture>
-      <img src="./assets/images/house2.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width">
+      <img src="./assets/images/house2.jpeg" alt="Beautiful house in San Jose" class="content__background--full-width lazyload">
     </picture>
   </section>
 
@@ -244,7 +245,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-matching-link="#contact-link" class="page-section">
     <div class="wrapper">
       <div class="content__container">
         <div class="content__text">
@@ -255,7 +256,7 @@
         </div>
       </div>
     </div>
-    <div id="map"></div>
+    <div id="map" class="lazyload"></div>
     <script>
        function initMap() {
          var uluru = {lat: 37.394787, lng: -121.929427};
@@ -290,8 +291,8 @@
                 <div>San Jose, CA 95134</div>
               </div>
             </div>
-            <div><i class="fa fa-phone" aria-hidden="true"></i>(831) 419-5274</div>
-            <div><i class="fa fa-envelope" aria-hidden="true"></i>marite@maritedufour.com</div>
+            <div><i class="fa fa-phone lazyload" aria-hidden="true"></i>(831) 419-5274</div>
+            <div><i class="fa fa-envelope lazyload" aria-hidden="true"></i>marite@maritedufour.com</div>
           </div>
 
           </div>
@@ -311,11 +312,11 @@
   <section id="associations">
     <div class="wrapper">
       <div class="row row--centered">
-        <img src="./assets/images/icons/CRA.png">
-        <img src="./assets/images/icons/trulia_vector.png">
-        <img src="./assets/images/icons/zillow_vector.png">
-        <img src="./assets/images/icons/realtor_vector.png">
-        <img src="./assets/images/icons/EHO_vector.png">
+        <img class="lazyload" src="./assets/images/icons/CRA.png">
+        <img class="lazyload" src="./assets/images/icons/trulia_vector.png">
+        <img class="lazyload" src="./assets/images/icons/zillow_vector.png">
+        <img class="lazyload" src="./assets/images/icons/realtor_vector.png">
+        <img class="lazyload" src="./assets/images/icons/EHO_vector.png">
       </div>
     </div>
 
@@ -330,10 +331,10 @@
           <div class="footer--right">
             <div class="footer__text">Connect With Me</div>
             <div class="footer__social-media">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              <i class="fa fa-twitter-square" aria-hidden="true"></i>
-              <i class="fa fa-envelope-square" aria-hidden="true"></i>
+              <i class="lazyload fa fa-facebook-square" aria-hidden="true"></i>
+              <i class="lazyload fa fa-linkedin-square" aria-hidden="true"></i>
+              <i class="lazyload fa fa-twitter-square" aria-hidden="true"></i>
+              <i class="lazyload fa fa-envelope-square" aria-hidden="true"></i>
             </div>
           </div>
 

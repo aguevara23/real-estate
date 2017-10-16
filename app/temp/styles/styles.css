@@ -448,113 +448,6 @@ a {
   color: white;
 }
 
-#about {
-  /*background: rgba(255, 0, 0, 0.5);*/
-  min-height: 100vh;
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-#listings {
-  background-color: #dbd8d8;
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-#communities {
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  position: relative;
-  background-color: #4a6f94;
-
-}
-
-#communities img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: .1;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-  }
-
-#communities .content__text * {
-    z-index: 5;
-    color: white;
-  }
-
-#buying, #selling {
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  position: relative;
-  background-color: black;
-}
-
-#buying img, #selling img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: .5;
-  }
-
-#buying .content__text *, #selling .content__text * {
-    z-index: 5;
-    color: white;
-  }
-
-#testimonial {
-  background-color: #666666;
-}
-
-#contact {
-  width: 100%;
-  min-height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #fff;
-}
-
-#associations {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #dbd8d8;
-
-}
-
-#associations img {
-    height: 80px;
-    margin: 20px;
-  }
-
-#footer {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #333333;
-  color: white;
-}
-
-#map {
-  width: 100%;
-  height: 55vh;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
 .primary-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +455,8 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+
+
 }
 
 .primary-nav ul {
@@ -575,19 +470,35 @@ a {
     padding: 10px;
   }
 
-.primary-nav ul li a {
+.primary-nav a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: .8rem;
     letter-spacing: 1.2px;
+    display: block;
+  }
+
+.primary-nav a.is-current-link {
+      color: orange;
+      /*padding-bottom: 5px;
+      border-bottom: 2px solid white;*/
+
+    }
+
+.primary-nav a:hover {
+    color: orange;
+    /*padding-bottom: 5px;
+    border-bottom: 2px solid white;*/
+    /*transition: 1s;*/
   }
 
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   -webkit-box-pack: justify;
@@ -596,7 +507,21 @@ a {
   /*background: rgba(255, 0, 0, 0.5);*/
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 10px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
 }
+
+.site-header--is-expanded {
+    background-color: white;
+  }
+
+.site-header--dark {
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 0;
+    padding-bottom: 0;
+
+  }
 
 .site-header__logos {
     display: -webkit-box;
@@ -646,6 +571,11 @@ a {
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1.3px;
+      text-decoration: none;
+    }
+
+.site-header__logo--light * {
+      color: white
     }
 
 .site-header__contact-number {
@@ -1159,3 +1089,144 @@ a {
 .contact__form__send {
   background-color: #ea6060;
 }
+
+#about {
+  /*background: rgba(255, 0, 0, 0.5);*/
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#listings {
+  background-color: #dbd8d8;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#communities {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: #4a6f94;
+
+}
+
+#communities img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .1;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+
+#communities .content__text * {
+    z-index: 5;
+    color: white;
+  }
+
+#buying, #selling {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: black;
+}
+
+#buying img, #selling img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .5;
+  }
+
+#buying .content__text *, #selling .content__text * {
+    z-index: 5;
+    color: white;
+  }
+
+#testimonial {
+  background-color: #666666;
+}
+
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fff;
+}
+
+#associations {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #dbd8d8;
+
+}
+
+#associations img {
+    height: 80px;
+    margin: 20px;
+  }
+
+#footer {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #333333;
+  color: white;
+}
+
+#map {
+  width: 100%;
+  height: 55vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.animated__slide-from-left {
+    
+    @-webkit-keyframes slide-from-left {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+    
+    @keyframes slide-from-left {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    -webkit-animation-name: slide-from-left;
+
+            animation-name: slide-from-left;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+
+  }

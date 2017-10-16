@@ -1,13 +1,26 @@
 .site-header {
   display: flex;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   justify-content: space-between;
   /*background: rgba(255, 0, 0, 0.5);*/
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 10px;
+  transition: background-color .2s ease-out;
 
+  &--is-expanded {
+    background-color: white;
+  }
+
+  &--dark {
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 0;
+    padding-bottom: 0;
+
+  }
 
   &__logos {
     display: flex;
@@ -40,9 +53,16 @@
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1.3px;
+      text-decoration: none;
     }
   }
 
+  &__logo--light {
+
+    * {
+      color: white
+    }
+  }
   &__contact-number {
     display: flex;
     justify-content: center;
