@@ -710,7 +710,7 @@ a {
       z-index: -100;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 1410px) {
 
 .site-header__contact-number * {
         opacity: 1;
@@ -844,8 +844,6 @@ a {
     top: 40%;
     width: 100%;
     height: 30%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
   }
 
 @media (min-width: 800px) {
@@ -1131,8 +1129,11 @@ a {
 
 .card__image img {
       z-index: -1;
-      max-width: 100%;
+      height: 100%;
+      width: auto;
       vertical-align: top;
+      -o-object-fit: cover;
+         object-fit: cover;
     }
 
 .card__image__info {
@@ -1765,36 +1766,10 @@ a {
   margin-bottom: 50px;
 }
 
-.animated__slide-from-left {
-    
-    @-webkit-keyframes slide-from-left {
-      0% {
-        opacity: 1;
-      }
+.animated {
+  -webkit-transition: -webkit-transform 1s 1s;
+  transition: -webkit-transform 1s 1s;
+  transition: transform 1s 1s;
+  transition: transform 1s 1s, -webkit-transform 1s 1s;
 
-      100% {
-        opacity: 0;
-      }
-    }
-    
-    @keyframes slide-from-left {
-      0% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 0;
-      }
-    }
-
-    -webkit-animation-name: slide-from-left;
-
-            animation-name: slide-from-left;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-
-  }
+}

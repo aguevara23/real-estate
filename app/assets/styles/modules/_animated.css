@@ -1,24 +1,4 @@
 .animated {
-
-
-
-  &__slide-from-left {
-    
-    @keyframes slide-from-left {
-      0% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 0;
-      }
-    }
-
-    animation-name: slide-from-left;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-delay: 1s;
-
-  }
+  transition: transform 1s 1s;
 
 }
