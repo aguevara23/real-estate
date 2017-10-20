@@ -105,17 +105,17 @@
   &__portrait {
     margin-top: 30px;
     width: 80%;
-    
+
     @mixin atMedium {
       margin-top: -70px;
 
     }
   }
 
-  /*&__background--full-width {
+  &__background--full-width {
     width: 100%;
     height: 100%;
-    opacity: 0;
+    object-fit: cover;
 
-  }*/
+  }
 }

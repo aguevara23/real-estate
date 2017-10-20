@@ -914,16 +914,6 @@ a {
   }
   }
 
-.content {
-
-  /*&__background--full-width {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-
-  }*/
-}
-
 .content__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1096,6 +1086,14 @@ a {
   }
   }
 
+.content__background--full-width {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+
+  }
+
 .card {
   width: 370px;
   background: #eaeaea;
@@ -1108,7 +1106,7 @@ a {
 
 .card {
     width: 370px;
-    margin-bottom: 0
+    margin-bottom: 10px
 
 
 }
