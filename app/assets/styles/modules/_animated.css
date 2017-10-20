@@ -1,4 +1,12 @@
 .animated {
-  transition: transform 1s 1s;
+  opacity: 0;
+  animation: .5s slidefade 1s forwards;
+  transform: translateX(-100%);
+}
 
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

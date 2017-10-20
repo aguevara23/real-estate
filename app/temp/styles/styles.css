@@ -1014,6 +1014,10 @@ a {
             justify-content: center;
   }
 
+.content__content-right picture {
+      text-align: center;
+    }
+
 .content__content-right input {
       width: 200px;
       -ms-flex-item-align: start;
@@ -1767,9 +1771,25 @@ a {
 }
 
 .animated {
-  -webkit-transition: -webkit-transform 1s 1s;
-  transition: -webkit-transform 1s 1s;
-  transition: transform 1s 1s;
-  transition: transform 1s 1s, -webkit-transform 1s 1s;
+  opacity: 0;
+  -webkit-animation: .5s slidefade 1s forwards;
+          animation: .5s slidefade 1s forwards;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
 
+@-webkit-keyframes slidefade {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
