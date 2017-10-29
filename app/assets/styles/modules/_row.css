@@ -2,8 +2,12 @@
   width: 100%;
   margin-top: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+
+  @mixin atMedium {
+    justify-content: space-between;
+  }
 
   &--margin-top {
     margin-top: 30px;
