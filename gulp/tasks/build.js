@@ -43,8 +43,8 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
       imagemin.gifsicle(),
       imageminJpegRecompress({
         loops:4,
-        min: 50,
-        max: 70,
+        min: 45,
+        max: 50,
         quality:'medium'
       }),
       imagemin.optipng(),
