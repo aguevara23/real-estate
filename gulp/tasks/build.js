@@ -5,7 +5,9 @@ var gulp        = require('gulp'),
     usemin      = require('gulp-usemin'),
     cssnano     = require('gulp-cssnano'),
     imagemin    = require('gulp-imagemin'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    imageminJpegRecompress = require('imagemin-jpeg-recompress');
+
 
 gulp.task('previewDist', function() {
   browserSync.init({
@@ -37,11 +39,17 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
 
 gulp.task('optimizeImages', ['deleteDistFolder'], function() {
   return gulp.src(['./app/assets/images/**/*'])
-    .pipe(imagemin({
-      progressive: true,
-      interlaced: true,
-      multipass: true
-    }))
+    .pipe(imagemin([
+      imagemin.gifsicle(),
+      imageminJpegRecompress({
+        loops:4,
+        min: 50,
+        max: 70,
+        quality:'medium'
+      }),
+      imagemin.optipng(),
+      imagemin.svgo()
+    ]))
     .pipe(gulp.dest("./docs/assets/images"));
 });
 

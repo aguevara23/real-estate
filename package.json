@@ -2,6 +2,7 @@
   "name": "real-estate",
   "version": "1.0.0",
   "dependencies": {
+    "imagemin-jpeg-recompress": "^5.1.0",
     "jquery": "^2.2.4",
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^4.0.0-rc3",
@@ -34,5 +35,5 @@
     "postcss-nested": "^2.0.2",
     "postcss-simple-vars": "^4.0.0",
     "webpack": "^2.6.1"
-    }
+  }
 }
