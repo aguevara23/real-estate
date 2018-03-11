@@ -7,12 +7,11 @@
     height: 100vh;
 
     @mixin atMedium {
-      height: 100vh;
+      height: initial;
     }
   }
 
   &__banner {
-
     background: rgba(230, 100, 0, 0.7);
     position: absolute;
     top: 40%;
@@ -47,7 +46,6 @@
       padding-right: 30px;
       align-items: flex-end;
     }
-
   }
 
   div {
@@ -65,7 +63,6 @@
     @mixin atMedium {
       font-size: 6rem;
       margin-top: -20px;
-
     }
   }
 }

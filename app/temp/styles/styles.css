@@ -832,12 +832,11 @@ a {
 @media (min-width: 800px) {
 
 .large-hero__hero-image {
-      height: 100vh
+      height: initial
   }
   }
 
 .large-hero__banner {
-
     background: rgba(230, 100, 0, 0.7);
     position: absolute;
     top: 40%;
@@ -876,7 +875,6 @@ a {
     height: 100%;
     width: 100%;
     padding-left: 20px;
-
   }
 
 @media (min-width: 800px) {
@@ -888,7 +886,6 @@ a {
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end
-
   }
   }
 
